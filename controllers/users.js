@@ -33,11 +33,11 @@ const user = {
 		  { _id: req.params.userId },
 		  {
 		  	$set: {
-		  		firstname: "testname",
-		      lastname: 'testlast',
+		  		firstname: req.body.firstname,
+		      lastname: req.body.lastname,
 		      avatar: '',
-		      email: 'test@test.test',
-		      mobile: '1234567890'
+		      email: req.body.email,
+		      mobile: req.body.mobile
 		  	}
 		  }
 		).exec()

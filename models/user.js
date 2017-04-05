@@ -5,10 +5,7 @@ var userSchema = new Schema({
   firstname: String,
   lastname: String,
   avatar: String,
-  email: {
-  	type: String,
-    unique: true,
-  },
+  email: String,
   mobile: String
 }, {
 	versionKey: false
